@@ -1,6 +1,10 @@
 
 # Quick Sort(퀵 정렬)
 
+# 시간복잡도
+# 기대 O(n log n)
+# 최악 O(n^2)
+
 arr = [5, 7, 9, 0, 3, 1, 6, 2, 4, 8]
 
 def quick_sort(arr, start, end):
@@ -41,7 +45,7 @@ print(arr)
 
 
 
-# 파이썬 전용 퀵정렬(속도는 조금 느리다)
+# 파이썬 전용 퀵정렬1(속도는 조금 느리다)
 
 arr = [5, 7, 9, 0, 3, 1, 6, 2, 4, 8]
 
@@ -63,6 +67,36 @@ def quick_sort_py(array):
     return quick_sort_py(left_side) + [pivot] + quick_sort_py(right_side)
 
 print(quick_sort_py(arr))
+
+# 출력 예시
+# [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+
+# 파이썬 전용 퀵정렬2(속도는 조금 느리다)
+
+arr = [5, 7, 9, 0, 3, 1, 6, 2, 4, 8]
+
+def quick_sort_py2(array):
+    # 리스트가 하나 이하의 원소만 담고있으면 종료
+    if len(array) <= 1:
+        return array
+
+    left_side, right_side = [],[]
+    pivot = array[0]
+
+    for index in range(1, len(array)):
+        # 왼쪽으로 분할
+        if array[index] <= pivot:
+            left_side.append(array[index])
+        # 오른쪽으로 분할
+        else:
+            right_side.append(array[index])
+
+    # 분할 이후 왼쪽과 오른쪽 부분에서 각각 정렬 수행하고, 전체 리스트 반환
+    return quick_sort_py2(left_side) + [pivot] + quick_sort_py2(right_side)
+
+print(quick_sort_py2(arr))
 
 # 출력 예시
 # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
