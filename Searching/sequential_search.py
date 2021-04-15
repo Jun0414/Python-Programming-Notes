@@ -1,5 +1,10 @@
 
 # Sequential Search (순차탐색)
+# 설명 : 앞에서부터 차례대로 검색하며 찾는다
+
+# 시간복잡도
+# 최악 O(n)
+
 
 def sequential_search(n, target, array):
     # 원소를 하나씩 확인
