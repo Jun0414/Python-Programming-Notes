@@ -1,6 +1,11 @@
 from collections import deque
 
 # Breadth-First Search(BFS, 너비 우선 탐색)
+# 설명 : 정점들과 같은 레벨에 있는 노드들(형제노드들)을 먼저 탐색하는 방식
+
+# 시간복잡도
+# 최악 O(노드 수 + 간선 수)
+
 
 def bfs(graph, start, visited):
     # 큐(Queue) 구현을 위해 deque 라이브러리 사용
@@ -17,7 +22,7 @@ def bfs(graph, start, visited):
 
         # 해당원소와 연결된, 아직 방문하지 않은 노드 큐에 삽입
         for i in graph[v]:
-            if not visited[v]:
+            if not visited[i]:
                 queue.append(i)
                 visited[i] = 1
 
