@@ -1,5 +1,9 @@
 
 # Depth-First Search(DFS, 깊이 우선 탐색)
+# 설명 : 정점의 자식들을 먼저 탐색하는 방식
+
+# 시간복잡도
+# 최악 O(노드 수 + 간선 수)
 
 def dfs(graph, v, visited):
     # 현재 노드 방문처리
