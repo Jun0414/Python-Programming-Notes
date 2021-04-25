@@ -3,19 +3,18 @@
 
 ### 📋 구성도
 ```
-┏━ Etc.
+┏━ else
+┃   ┣━ backtracking.py
+┃   ┣━ dynamic_programming.py
+┃   ┣━ greedy.py
 ┃   ┗━ palindrome.py
 ┃
 ┣━ Graph
-┃
-┣━ MST
-┃   ┣━ kruskal.py
-┃   ┗━ prim.py
+┃   ┣━ bfs.py
+┃   ┗━ dfs.py
 ┃
 ┣━ Searhing
-┃   ┣━ bfs.py
 ┃   ┣━ binary_search.py
-┃   ┣━ dfs.py
 ┃   ┗━ sequential_search.py
 ┃
 ┣━ Sorting
@@ -27,7 +26,7 @@
 ┃   ┣━ quick_sort.py
 ┃   ┗━ selection_sort.py
 ┃
-┗━ dynamic_programming.py
+┗━ 
 ```
 
 ### 🔎 메커니즘 (Mechanism)
