@@ -11,11 +11,11 @@
 ┃
 ┣━ Graph
 ┃   ┣━ MST
-┃   ┃   ┣━ kruskal.py(예정)
+┃   ┃   ┣━ kruskal.py
 ┃   ┃   ┗━ prim.py (예정)
 ┃   ┣━ bfs.py
 ┃   ┣━ dfs.py
-┃   ┗━ dijkstra.py(예정)
+┃   ┗━ dijkstra.py
 ┃
 ┣━ Searhing
 ┃   ┣━ binary_search.py
