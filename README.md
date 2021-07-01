@@ -43,4 +43,4 @@
 ⭐️ `크루스칼 (Kruskal Algorithm)`
 - 모든 정점을 비용이 적은 것부터 연결하며, cycle이 형성되지 않는 트리 구조 방법 (탐욕 알고리즘 기초)
 
-참고 : [다익스트라 설명](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/?ref=lbp)
+참고 : [크루스칼 설명](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/?ref=lbp)
